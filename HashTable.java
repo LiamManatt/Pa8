@@ -159,7 +159,7 @@ public class HashTable implements IHashTable {
     private void rehash() {
         double cap = capacity;
         double sizeDouble = size;
-        log += "Before rehash #" + rehashes + ": load factor of " +
+        log += "Before rehash #" + rehashes + ": load factor " +
                 String.format("%.2f", sizeDouble/cap) + ", " + collisions
                 + " collision(s).\n";
         String[] newTable = new String[capacity*TWICE];
